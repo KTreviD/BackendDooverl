@@ -57,3 +57,6 @@ def getZipCodes(request, codigo):
 
     finally:
         db.close()
+
+def hey(request):
+    return JsonResponse({"Hola"})
