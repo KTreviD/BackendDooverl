@@ -5,6 +5,7 @@ import json
 def getZipCodes(request, codigo):
     db = MySQLdb.connect(
         host='containers-us-west-162.railway.app',
+        url='mysql://root:1NZulvxyEQlLmZePjkGK@containers-us-west-162.railway.app:5561/railway',
         user='root',
         password='1NZulvxyEQlLmZePjkGK',
         database='railway',
