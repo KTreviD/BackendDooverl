@@ -1,10 +1,23 @@
 # BackendDooverl
 
 # Como resolvi el problema
-1- Descargar en la opcion de "Todos" en Excel.
-2- Ver como estaba la tabla de la informacion que tenian.
-3- Crear mi base de datos en MySQL hosteada en railway.
-4- Duplicar la tabla que ellos manejaban de su Excel en mi tabla "zipCodes.
-5- Exportar cada hoja cambiandoles la extension por csv para poder leerlas e insertarlas con codigo.
-6- Crear y ejecutar el codigo que se ve en el archivo de node/index.js, lo que hace es iterar todos los cvs que estan en node/csvs (Hay uno por cada estado), e insertar la informacion de esos archivios como registros en mi tabla de "zipCodes".
-7- Una vez lista la tabla empece a crear el servidor de Django con python
+1. **Descargar los Datos en Excel**
+   - Descarga la hoja de cálculo en la opción "Todos" en formato Excel.
+
+2. **Verificación de la Tabla de Datos Original**
+   - Comprueba cómo estaba estructurada la tabla de información en el archivo Excel original para entender su formato y columnas.
+
+3. **Configurar una Base de Datos MySQL en Railway**
+   - Crea una base de datos MySQL en Railway (o tu plataforma de elección) para almacenar los datos.
+
+4. **Duplicar la Tabla de Datos en la Base de Datos**
+   - Crea una tabla llamada "zipCodes" en la base de datos y duplica la estructura de la tabla de Excel para almacenar los datos.
+
+5. **Exportar Datos a archivos CSV**
+   - Exporta cada hoja del archivo Excel original como un archivo CSV, cambiando la extensión adecuadamente.
+
+6. **Ejecutar el Código de Importación de Datos**
+   - Utiliza el archivo `node/index.js` para iterar a través de los archivos CSV en la carpeta `node/csvs` (uno por cada estado) e insertar la información en la tabla "zipCodes" de la base de datos MySQL.
+
+7. **Configurar y Ejecutar el Servidor Django**
+   - Crea un servidor Django en Python para acceder a los datos almacenados en la base de datos MySQL.
