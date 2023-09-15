@@ -1,6 +1,5 @@
 from django.http import JsonResponse
 import MySQLdb
-import json
 
 def getZipCodes(request, codigo):
     db = MySQLdb.connect(
@@ -14,10 +13,8 @@ def getZipCodes(request, codigo):
     try:
         cursor = db.cursor()
 
-        # Ejecuta una consulta para buscar el código en la base de datos
         cursor.execute("SELECT * FROM zipCodes WHERE d_codigo = %s", (codigo,))
 
-        # Obtiene los resultados de la consulta
         results = cursor.fetchall()
 
         if results:
